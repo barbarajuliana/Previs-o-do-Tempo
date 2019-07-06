@@ -1,0 +1,19 @@
+
+
+/* para garantir que estes elementos ocuparão toda a tela */
+html {
+    font-family: Tahoma, sans-serif ;
+    height: 100%;
+}
+
+
+body{
+    font-family: Tahoma, sans-serif ;
+    padding-top: 3.5rem;
+    background-image: url(imagens/ceu.jpg);
+    background-size: cover;
+}
+
+.jumbotron{
+    background-color: lightblue;
+}
