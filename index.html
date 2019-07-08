@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clima de Salvador-BA</title>
+    <title>Previsão do Tempo</title>
 
 
     
     <!--<script src="jquery-3.4.0.min.js"></script>-->
 
     <!--API-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <!--JS-->
     <script src="funcionamento.js"></script>
@@ -35,7 +35,17 @@
     <!-- Cidade -->
     <div class="jumbotron">
         <div class="container responsive" align="center">
-            <h3 id="cidade"></h3>
+            <p>Buscar cidade: </p>
+                <div class="form-group">
+                    <label class="sr-only" for="city_search">Buscar cidade</label>
+                    <input type="text" class="form-control city-search" id="city_input" placeholder="ex: Salvador, BA" autocomplete="off">
+                </div>
+                    <button class="btn btn-default">Buscar</button>
+            
+            <div class="city-search-results hide well"></div>
+        </div>
+        <div class="container responsive" align="center">
+            <h3 id="NomeCidade"></h3>
             <img id="weather-img" class="img-center img-circle displayed img-responsive" >
             <h1 id="tempo" class="display-3"></h1>
         </div>
@@ -64,8 +74,6 @@
             </div>
         </div>
     </div>
-
     
 </body>
-
 </html>
